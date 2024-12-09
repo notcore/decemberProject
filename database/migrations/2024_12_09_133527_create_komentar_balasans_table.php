@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('komentar_balasans', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade')->unique();
+            $table->foreignId('komentar_id')->constrained('komentars')->onDelete('cascade');
+            $table->text('isi_balasan');
             $table->timestamps();
         });
     }
