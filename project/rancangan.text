@@ -1,0 +1,26 @@
+web sinopsis film
+
+fitur login/register
+ system memastikan bahwa alamat email tepat yang mereka daftarkan
+ saat user lupa password juga memiliki kesempatan untuk meresert password
+ mereka.
+
+user memiliki role
+ table database : user['admin','user','editor'];
+
+dimana sinopsis film itu memiliki fitur categori,pengarang,komentar,rating,suka,simpan.
+ table database : films['rating','komentar','like','user','simpan','view'];
+
+user dapat saling mengikuti/follow.
+    Beta_logic = user memiliki foreign id ke diri sendiri;
+
+fitur spesial
+-notifikasi
+ 'sinposis film memilki jadwal rilis dan ketika user memberi label simpan maka email'
+ 'akan dikrim ke email pengguna untuk memberitau film yang ia simpan rilis'
+
+-chart
+ 'admin dapat melihat film apa yang sering dilihat user'
+
+
+
