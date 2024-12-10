@@ -17,7 +17,7 @@ class homeMiddleware
     {
         if(auth()->check()){
             if(is_null(auth()->user()->email_verified_at)){
-                return redirect()->route('login');
+                return redirect('email/verify');
             }
         }
         return $next($request);

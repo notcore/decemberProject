@@ -44,7 +44,23 @@ class FortifyServiceProvider extends ServiceProvider
         });
 
         Fortify::loginView(function(){
+            return view('web.auth.login');
+        });
 
+        Fortify::registerView(function(){
+            return view('web.auth.register');
+        });
+
+        Fortify::verifyEmailView(function(){
+            return view('web.auth.email.emailVerify');
+        });
+
+        Fortify::requestPasswordResetLinkView(function(){
+            return view('web.auth.key.emailPassword');
+        });
+
+        Fortify::resetPasswordView(function(Request $request){
+            return view('web.auth.key.resetPassword',['data'=>$request]);
         });
     }
 }

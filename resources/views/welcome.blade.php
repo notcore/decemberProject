@@ -31,7 +31,7 @@
   </nav>
   <section class="min-h-screen p-5">
     <div>
-        <a href="/home">masuk tanpa login &rarr;</a>
+      <div id="opening"></div>
     </div>
   </section>
   

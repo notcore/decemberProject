@@ -11,6 +11,7 @@
 </head>
 <body class="">
   {{ $slot }}
+  <script src="{{ mix('js/app.js') }}"></script>
   <script src="../scripts/js/open-modals-on-init.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
